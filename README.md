@@ -1,7 +1,11 @@
 # Авторизация/Регистрация/Восстановление пароля
 
 Стандартное окно для входа на сервер.
-Дизайн взят с [ragemp.pro](https://ragemp.pro/resources/makety-dizajna-hud-avtorizacija-registracija-zabyl-parol-dlja-servera-rage-mp.319/), автор: **[trasher](https://ragemp.pro/members/trasher.8595/)** *(спасибо большое)*
+
+Дизайн взят с [ragemp.pro](https://ragemp.pro/resources/makety-dizajna-hud-avtorizacija-registracija-zabyl-parol-dlja-servera-rage-mp.319/)
+
+Автор дизайна: **[trasher](https://ragemp.pro/members/trasher.8595/)** *(спасибо большое)*
+
 Разработка: discord: **peach#5569**
   
 
