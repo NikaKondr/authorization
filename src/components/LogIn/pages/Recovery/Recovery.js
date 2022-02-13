@@ -20,9 +20,12 @@ const Recovery = ({addNotify, setPageGlobal}) => {
     },[inputData])
 
     const acceptButton = React.useCallback(() => {
+        const regExpEmail = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
         if (inputData.email === '' ||  inputData.login === '') addNotify('error', 'Заполните все поля!');
+        else if (!regExpEmail.test(inputData.email))  addNotify('error', 'Некорректный email');
         else {
-                mp.trigger('logIn', 'recovery', {inputData}); // eslint-disable-line
+                mp.trigger('logIn', 'recovery', inputData); // eslint-disable-line
                 addNotify('access', 'Письмо о восстановлении отправлено на вашу почту');
         }
     },[inputData])
