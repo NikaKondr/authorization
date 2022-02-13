@@ -5,7 +5,7 @@ import LogIn          from './components/LogIn';
 
 
 function App() {
-  const [component, setComponent] = React.useState('logIn'); // для отображение введите 'logIn'
+  const [component, setComponent] = React.useState(null); // для отображение введите 'logIn'
 
   React.useEffect(() => {
     EventManager.addHandler('app', 'setComponent', component => setComponent(component));
