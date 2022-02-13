@@ -1,0 +1,138 @@
+.logIn-reg {
+    display: flex;
+    flex-direction: column;
+
+    z-index: 10;
+
+    &-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &__title {
+            margin-top: 1.8518518518518516vh;
+
+            font-family: 'Geometria Bold';
+            font-size: 2.7777777777777777vh;
+            color: #fff;            
+        }
+
+        &__desc {
+            font-family: 'Geometria Regular';
+            font-size: 1.3888888888888888vh;
+            color: #fff;
+
+            & span {
+                color: #8A89F9;
+            }
+        }
+    }
+
+    &-content {
+        margin-top: 1.8518518518518516vh;
+
+        width: 35.18518518518518vh;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &-input {
+            margin-bottom: 1.3888888888888888vh;
+
+            padding-left: 1.2962962962962963vh;
+            padding-right: 1.2962962962962963vh;
+
+            width: 100%;
+            height: 5.555555555555555vh;
+
+            display: flex;
+            align-items: center;
+
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 0.9259259259259258vh;
+
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+
+            &__img {
+                width: 2.0370370370370368vh;
+                height: 1.8518518518518516vh;
+
+                background-repeat: no-repeat;
+                background-size: cover;
+
+                filter: invert(100%) sepia(1%) saturate(7498%) hue-rotate(125deg) brightness(110%) contrast(101%);
+                opacity: 0.5;
+
+                transition: all 0.3s;
+
+                &_active {
+                    opacity: 1;
+                }
+            }
+
+            & input {
+                outline: none;
+                border: none;
+                background: none;
+
+                margin-left: 0.7407407407407407vh;
+
+                width: 29.999999999999996vh;
+
+                font-family: 'Geometria Regular';
+                font-size: 1.8518518518518516vh;
+                color: #fff;
+                opacity: 1;
+
+                &::placeholder {
+                    font-family: 'Geometria Regular';
+                    font-size: 1.8518518518518516vh;
+                    color: #fff;
+                    opacity: 0.5;
+                }
+            }
+        }
+
+        &-button {
+            margin-top: 1.8518518518518516vh;
+
+            width: 100%;
+            height: 5.555555555555555vh;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            background: linear-gradient(180deg, #A5A4FF 0%, #8A89F9 100%);
+            border-radius: 0.9259259259259258vh;
+
+            font-family: 'Geometria Regular';
+            font-size: 1.6666666666666665vh;
+            color: #fff;
+
+            transition: all 0.3s;
+
+            &:hover {
+                opacity: 0.5;
+            }
+        }
+
+        &__desc {
+            margin-top: 0.8333333333333333vh;
+
+            font-family: 'Geometria Regular';
+            font-size: 1.3888888888888888vh;
+            color: #fff;
+
+            opacity: 0.5;
+            transition: all 0.3s;
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+}
