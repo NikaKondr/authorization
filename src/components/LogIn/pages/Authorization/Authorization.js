@@ -1,6 +1,6 @@
 import * as React   from 'react';
 import cn           from 'classnames';
-import {mp}         from '../../../../utils/mp'
+import EventManager from '../../../../utils/EventManger'
 
 import './Authorization.scss'
 
@@ -32,9 +32,9 @@ const Authorization = ({addNotify, setPageGlobal, rememberAccount}) => {
     const acceptButton = React.useCallback(() => {
         if (inputData.login === '' ||  inputData.password === '') addNotify('error', 'Заполните все поля!');
         else {
-                let data = {login: inputData.login, password: inputData.login, remember: rememberData}
-                mp.trigger('logIn', 'authorization', JSON.stringify(data)); // eslint-disable-line
-                addNotify('access', 'Идет проверка...');
+            let data = {login: inputData.login, password: inputData.login, remember: rememberData}
+            EventManager.trigger('logIn', 'authorization', data); // eslint-disable-line
+            addNotify('access', 'Идет проверка...');
         }
     },[inputData.login, inputData.password, rememberData])
 
