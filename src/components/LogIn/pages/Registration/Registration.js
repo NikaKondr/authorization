@@ -39,7 +39,7 @@ const Registration = ({addNotify, setPageGlobal}) => {
         else if (inputData.login.length < 6)  addNotify('error', 'Логин какой-то короткий..');
         else if (inputData.password.length < 6)  addNotify('error', 'Пароль от 6 символов');
         else {
-            mp.trigger('logIn', 'registration', inputData); // eslint-disable-line
+            mp.trigger('logIn', 'registration', JSON.stringify(inputData)); // eslint-disable-line
             addNotify('access', 'Все введено верно!');
         }
     },[inputData.email, inputData.login, inputData.password, inputData.promocode])

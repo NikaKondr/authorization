@@ -25,7 +25,7 @@ const Recovery = ({addNotify, setPageGlobal}) => {
         if (inputData.email === '' ||  inputData.login === '') addNotify('error', 'Заполните все поля!');
         else if (!regExpEmail.test(inputData.email))  addNotify('error', 'Некорректный email');
         else {
-                mp.trigger('logIn', 'recovery', inputData); // eslint-disable-line
+                mp.trigger('logIn', 'recovery', JSON.stringify(inputData)); // eslint-disable-line
                 addNotify('access', 'Письмо о восстановлении отправлено на вашу почту');
         }
     },[inputData])

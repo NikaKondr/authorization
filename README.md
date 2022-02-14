@@ -41,13 +41,13 @@ type: **'error'** - Уведомление красного цвета.
 ## Клиент-> Сервер 
 
 ### Авторизация
-``('logIn', 'authorization', {login: '', password: '', remember: boolean})``
+``('logIn', 'authorization', {"login":"Funtik_22","password":"Funtik_22","remember":true})``
 
 ### Регистрация
-``('logIn', 'registration', {email: '', login: '', password: '', promocode: ''})``
+``('logIn', 'registration', {"email":"","login":"","password":"","promocode":""})``
 
 ### Восстановление пароля
-``('logIn', 'recovery', {email: '', login: ''})``
+``('logIn', 'recovery', {"email":"", "login":""})``
 
 # Примечание
 Если вы захотите использовать это на своем сервере, то перед билдом вам нужно удалить файл **mp.js**
