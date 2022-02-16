@@ -1,5 +1,7 @@
 # Авторизация/Регистрация/Восстановление пароля
 
+### [**DEMO**](https://nikakondr.github.io/authorization/)
+
 Стандартное окно для входа на сервер.
 
 Дизайн взят с [ragemp.pro](https://ragemp.pro/resources/makety-dizajna-hud-avtorizacija-registracija-zabyl-parol-dlja-servera-rage-mp.319/)
