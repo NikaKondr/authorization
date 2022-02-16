@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/authorization/static/css/main.120bf627.css",
+    "main.js": "/authorization/static/js/main.c8c3320b.js",
+    "static/media/bg.png": "/authorization/static/media/bg.3e6f3e6b4d1d2b714ef4.png",
+    "static/media/player.png": "/authorization/static/media/player.d1ce410caf3a766e8a43.png",
+    "static/media/Geometria-Regular.ttf": "/authorization/static/media/Geometria-Regular.8f177d24d33171dfc518.ttf",
+    "static/media/Geometria-Bold.ttf": "/authorization/static/media/Geometria-Bold.1873fe842023d533821b.ttf",
+    "static/media/password.svg": "/authorization/static/media/password.8769b559496c1a270492.svg",
+    "static/media/promocode.svg": "/authorization/static/media/promocode.d3c66041722dc1b2f832.svg",
+    "index.html": "/authorization/index.html",
+    "static/media/email.svg": "/authorization/static/media/email.6242385e0bc5de066be6.svg",
+    "static/media/login.svg": "/authorization/static/media/login.80ce69b3f69f5b34bded.svg",
+    "main.120bf627.css.map": "/authorization/static/css/main.120bf627.css.map",
+    "main.c8c3320b.js.map": "/authorization/static/js/main.c8c3320b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.120bf627.css",
+    "static/js/main.c8c3320b.js"
+  ]
+}
