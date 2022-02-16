@@ -1,23 +1,20 @@
-import * as React     from 'react';
-import EventManager   from './utils/EventManger';
+import * as React   from 'react'
+import EventManager from './utils/EventManger'
 
-import LogIn          from './components/LogIn';
-
+import LogIn        from './components/LogIn'
 
 function App() {
-  const [component, setComponent] = React.useState(null); // для отображение введите 'logIn'
+	const [component, setComponent] = React.useState(null); // для отображение введите 'logIn'
 
-  React.useEffect(() => {
-    EventManager.addHandler('app', 'setComponent', component => setComponent(component));
+	React.useEffect(() => {
+		EventManager.addHandler('app', 'setComponent', (component) => setComponent(component));
 
-    return () => EventManager.removeHandler('app');
- },[])
+		return () => EventManager.removeHandler('app');
+	},[]);
 
-  return (
-    <div className="app">
-      {component === 'logIn' && <LogIn />} 
-    </div>
-  );
-}
+	return <div className='app'>
+		{component === 'logIn' && <LogIn />}
+	</div>
+};
 
 export default App;
