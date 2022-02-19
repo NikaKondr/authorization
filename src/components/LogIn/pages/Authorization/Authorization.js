@@ -67,4 +67,4 @@ const Authorization = ({addNotify, setPageGlobal, rememberAccount}) => {
 	</div>
 };
 
-export default React.memo(Authorization);
+export default Authorization;

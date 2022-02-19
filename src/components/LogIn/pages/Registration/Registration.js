@@ -66,4 +66,4 @@ const Registration = ({addNotify, setPageGlobal}) => {
 	</div>
 };
 
-export default React.memo(Registration);
+export default Registration;

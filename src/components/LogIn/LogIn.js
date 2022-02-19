@@ -29,9 +29,14 @@ const LogIn = () => {
 	},[notify]);
 
 	React.useEffect(() => {
-		EventManager.addHandler('logIn', 'setNotify', obj => addNotify(obj));
-		EventManager.addHandler('logIn', 'setRememberAccount', obj => setRememberAccount(obj));
-
+		EventManager.addHandler('logIn', value => {
+			if (value.type === 'setNotify') {
+				addNotify(value.data)
+			} else if (value.type === 'setRememberAccount') {
+				setRememberAccount(value.data)
+			} else return;
+		})
+		
 		return () => EventManager.removeHandler('logIn');
 	 },[]);
 
@@ -60,4 +65,4 @@ const LogIn = () => {
 	</div>
 };
 
-export default React.memo(LogIn);
+export default LogIn;

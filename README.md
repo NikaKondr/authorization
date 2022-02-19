@@ -28,17 +28,17 @@
 ## Сервер -> Клиент
 
 ### Отобразить интерфейс
-``('app', 'setComponent', 'logIn')``
+``('app', {type: 'setComponent', data: 'logIn'})``
 
 ### Вызов нотифи
-``('logIn', 'setNotify', {type: 'access', text: 'Все верно!'})``
+``('logIn', {type: 'setNotify', data: {type: 'access', text: 'Все верно!'} })``
 
 type: **'access'** - Уведомление зеленого цвета.
 
 type: **'error'** - Уведомление красного цвета.
 
 ### Отправка сохранненых данных пользователя для входа
-``('logIn', 'setRememberAccount', {login: 'Funtik_22', password: 'Happy_Hacking'})``
+``('logIn', {type: 'setRememberAccount', data: {login: 'Funtik_22', password: 'Happy_Hacking'} })``
 
 ## Клиент-> Сервер 
 

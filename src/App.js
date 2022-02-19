@@ -7,7 +7,11 @@ function App() {
 	const [component, setComponent] = React.useState(null); // для отображение введите 'logIn'
 
 	React.useEffect(() => {
-		EventManager.addHandler('app', 'setComponent', (component) => setComponent(component));
+		EventManager.addHandler('app', value => {
+			if (value.type === 'setComponent') {
+				setComponent(value.data)
+			}	else return;
+		})
 
 		return () => EventManager.removeHandler('app');
 	},[]);
